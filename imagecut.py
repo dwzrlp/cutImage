@@ -1,3 +1,5 @@
+# coding = utf-8
+
 from PIL import Image
 
 img = Image.open('freesxstylers-31.jpg')
