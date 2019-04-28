@@ -19,7 +19,7 @@ def imageCut(image):
     img2 = img.crop((0, 143, width, height))
     # 获得今天的日期
     today = time.strftime("%Y-%m-%d", time.localtime())
-    img2FileName = 'wifi_' + str(today + '.jpg')
+    img2FileName = 'wifi_' + str(today + '.png')
     # 将文件另存为新文件
     img2.save(img2FileName)
     os.remove(image)
