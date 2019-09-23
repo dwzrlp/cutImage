@@ -11,7 +11,7 @@ def getImage():
     # 正则表达式获取所有img标签中的图片地址
     p = re.compile(r'<img[^>]*?src="([^"]*)')
     # 获取第四个图片的地址，第五个图片是正文中的那张图
-    image = p.findall(r.text)[3]
+    image = p.findall(r.text)[2]
     # 获取第四个图片
     ir = requests.get(image)
     # 获取图片名
