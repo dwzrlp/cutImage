@@ -1,3 +1,5 @@
+import time
+
 import requests  # request img from web
 import shutil  # save img locally
 
@@ -44,3 +46,4 @@ for i in range(0, 10):
 
 for i in my_list:
     download_image("https://p.iimzt.com/2022/01/" + i, i)
+    time.sleep(1.3)  # 增加休眠时间以保证不会同一个ip访问被拒绝
