@@ -29,21 +29,21 @@ def download_image(url, file_name):
         print('下载失败')
 
 
-my_list = []
-for i in range(0, 10):
-    a = str(i)
-    for j in range(0, 10):
-        b = str(j)
-        for h in range(97, 123):
-            c = str(chr(h))
-            for k in range(0, 10):
-                d = str(k)
-                for t in range(0, 10):
-                    e = str(t)
-                    for m in range(97, 123):
-                        f = str(chr(m))
-                        my_list.append(a + b + c + d + e + f + ".jpg")
-
-for i in my_list:
-    download_image("https://p.iimzt.com/2022/01/" + i, i)
-    time.sleep(1.3)  # 增加休眠时间以保证不会同一个ip访问被拒绝
+# my_list = []
+# for i in range(0, 10):
+#     a = str(i)
+#     for j in range(0, 10):
+#         b = str(j)
+#         for h in range(97, 123):
+#             c = str(chr(h))
+#             for k in range(0, 10):
+#                 d = str(k)
+#                 for t in range(0, 10):
+#                     e = str(t)
+#                     for m in range(97, 123):
+#                         f = str(chr(m))
+#                         my_list.append(a + b + c + d + e + f + ".jpg")
+#
+# for i in my_list:
+#     download_image("https://p.iimzt.com/2022/01/" + i, i)
+#     time.sleep(1.3)  # 增加休眠时间以保证不会同一个ip访问被拒绝
